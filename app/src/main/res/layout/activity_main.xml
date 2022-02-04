@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:background="#2F3C85"
+        android:onClick="funcion_ubicacion"
+        android:text="Ubicación"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:background="#2F3C85"
+        android:onClick="funcion_contacto"
+        android:text="Contacto"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="109dp"
+        android:layout_height="43dp"
+        android:background="#2F3C85"
+        android:onClick="funcion_matricula"
+        android:text="Matricula"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="174dp"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.012"
+        app:srcCompat="@mipmap/logobueno_foreground" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="350dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="El Instituto de Formación Profesional Ces Lope de Vega SCA es una Sociedad Cooperativa formada por profesionales de la enseñanza cuya finalidad es la educación. Nuestra sede se encuentra situada en Calle Peñas Cordobesas s/n en Córdoba." />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="350dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="La Escuela nació en los años 70, como Escuela de Formación Profesional, en respuesta a la necesidad de formar a personas para que pudieran incorporarse al mundo laboral. Siempre tuvimos enseñanzas de Formación Profesional y en la nueva andadura incorporamos el bachillerato de Humanidades y Ciencias Sociales y de Ciencias." />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="En la actualidad impartimos los Ciclos de Grado Superior de Técnico Superior en Administración y finanzas y Técnico Superior en Administración de sistemas informáticos en red. Tenemos en nuestra oferta educativa Grados Superiores Privados como el de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, Técnico Superior en Marketing y Publicidad y Técnico Superior en Administración de sistemas informáticos en red en su modalidad a distancia." />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

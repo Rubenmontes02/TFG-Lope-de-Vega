@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Matricula">
+
+    <LinearLayout
+        android:id="@+id/LBach"
+        android:layout_width="413dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Seleccione el Bachillerato deseado:"
+            android:textColor="#2F3C85" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbSalud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funcionBachSalud"
+                    android:text="BACHILLERATO DE CIENCIAS DE LA SALUD Y TECNOLÓGICO"
+                    android:textColor="#2F3C85" />
+
+                <RadioButton
+                    android:id="@+id/rbSociales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funcionBachSociales"
+                    android:text="BACHILLERATO DE HUMANIDADES Y CIENCIAS SOCIALES"
+                    android:textColor="#2F3C85" />
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LMedio"
+        android:layout_width="380dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Seleccione el Grado Medio deseado:"
+            android:textColor="#2F3C85" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbASIR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funcionASIR1"
+                    android:text="GRADO MEDIO SISTEMAS MICROINFORMÁTICOS Y REDES"
+                    android:textColor="#2F3C85" />
+
+                <RadioButton
+                    android:id="@+id/rbActComerciales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funcionactComer"
+                    android:text="GRADO MEDIO ACTIVIDADES COMERCIALES"
+                    android:textColor="#2F3C85" />
+
+                <RadioButton
+                    android:id="@+id/rbGestAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funciongestadmini"
+                    android:text="GRADO MEDIO GESTION ADMINISTRATIVA"
+                    android:textColor="#2F3C85" />
+
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LSuperior"
+        android:layout_width="380dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Seleccione el Grado Superior deseado:"
+            android:textColor="#2F3C85" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPublico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funcionpublico"
+                    android:text="Grado Superior Público"
+                    android:textColor="#2F3C85" />
+
+                <RadioButton
+                    android:id="@+id/rbPrivado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="funcionprivado"
+                    android:text="Grado Superior Privado"
+                    android:textColor="#2F3C85" />
+            </LinearLayout>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/LPrivado"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Indica el curso privado que desea:"
+                android:textColor="#2F3C85" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RadioButton
+                        android:id="@+id/rbMarkPubli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="seleccionmarketing"
+                        android:text="GRADO SUPERIOR MARKETING Y PUBLICIDAD"
+                        android:textColor="#2F3C85"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/rbDAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="selecciondam"
+                        android:text="GRADO SUPERIOR EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA"
+                        android:textColor="#2F3C85"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/rbASIRD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="seleccionasirdistancia"
+                        android:text="GRADO SUPERIOR ADMINISTRACION DE SISTEMAS INFORMATICOS EN RED A DISTANCIA"
+                        android:textColor="#2F3C85"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LPublico"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Indica el curso público que desea:"
+                android:textColor="#2F3C85" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbAdminFinan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="seleccionfinanzas"
+                        android:text="GRADO SUPERIOR ADMINISTRACION Y FINANZAS"
+                        android:textColor="#2F3C85"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/rbASIR2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="seleccionasir2"
+                        android:text="GRADO SUPERIOR ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED"
+                        android:textColor="#2F3C85"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btmatricularse"
+        android:layout_width="113dp"
+        android:layout_height="37dp"
+        android:background="#2F3C85"
+        android:onClick="inicio"
+        android:text="Matricularse"
+        android:textColor="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btinicio3"
+        android:layout_width="113dp"
+        android:layout_height="37dp"
+        android:background="#2F3C85"
+        android:onClick="inicio"
+        android:text="Inicio"
+        android:textColor="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Selecciona el curso:"
+        android:textColor="#2F3C85"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <RadioGroup
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbBach"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:onClick="funcionbach"
+                android:text="Bachillerato"
+                android:textColor="#2F3C85" />
+
+            <RadioButton
+                android:id="@+id/rbMedio"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="seleccionmedio"
+                android:text="Grado Medio"
+                android:textColor="#2F3C85" />
+
+            <RadioButton
+                android:id="@+id/rbSuperior"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="seleccionsuperior"
+                android:text="Grado Superior"
+                android:textColor="#2F3C85" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
