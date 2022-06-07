@@ -16,11 +16,6 @@ public class Contacto extends AppCompatActivity {
         setContentView(R.layout.activity_contacto);
     }
 
-    public void inicio(View view) {
-        finish();
-    }
-
-
 
     public void funcionllamar(View view) {
 

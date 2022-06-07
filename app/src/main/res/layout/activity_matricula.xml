@@ -86,11 +86,11 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/rbASIR"
+                    android:id="@+id/rbSMR"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="funcionASIR1"
+                    android:onClick="funcionSMR"
                     android:text="GRADO MEDIO SISTEMAS MICROINFORMÁTICOS Y REDES"
                     android:textColor="#2F3C85" />
 
@@ -255,7 +255,7 @@
                         android:visibility="visible" />
 
                     <RadioButton
-                        android:id="@+id/rbASIR2"
+                        android:id="@+id/rbASIR"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="seleccionasir2"
@@ -269,6 +269,7 @@
 
     </LinearLayout>
 
+
     <Button
         android:id="@+id/btmatricularse"
         android:layout_width="113dp"
@@ -279,25 +280,10 @@
         android:textColor="#FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-    <Button
-        android:id="@+id/btinicio3"
-        android:layout_width="113dp"
-        android:layout_height="37dp"
-        android:background="#2F3C85"
-        android:onClick="inicio"
-        android:text="Inicio"
-        android:textColor="#FFFCFC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.942" />
 
     <TextView
         android:id="@+id/textView9"

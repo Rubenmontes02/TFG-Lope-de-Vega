@@ -18,7 +18,7 @@ public class Matricula extends AppCompatActivity {
     RadioButton Bach_Salud;
     RadioButton Bach_Sociales;
 
-    RadioButton GMedio_ASIR;
+    RadioButton GMedio_SMR;
     RadioButton GMedio_ActComer;
     RadioButton GMedio_GestAdmin;
 
@@ -29,7 +29,7 @@ public class Matricula extends AppCompatActivity {
     RadioButton GSASIRD;
     RadioButton GSDAM;
     RadioButton GSAdminFinan;
-    RadioButton GSASIR2;
+    RadioButton GSASIR;
 
     LinearLayout Layout_Bach;
     LinearLayout Layout_Medio;
@@ -49,7 +49,7 @@ public class Matricula extends AppCompatActivity {
         Bach_Salud = (RadioButton) findViewById(R.id.rbSalud);
         Bach_Sociales = (RadioButton) findViewById(R.id.rbSociales);
 
-        GMedio_ASIR = (RadioButton) findViewById(R.id.rbASIR);
+        GMedio_SMR = (RadioButton) findViewById(R.id.rbSMR);
         GMedio_ActComer= (RadioButton) findViewById(R.id.rbActComerciales);
         GMedio_GestAdmin = (RadioButton) findViewById(R.id.rbGestAdmin);
 
@@ -57,14 +57,10 @@ public class Matricula extends AppCompatActivity {
         GSMarketing = (RadioButton) findViewById(R.id.rbMarkPubli);
         GSDAM = (RadioButton) findViewById(R.id.rbDAM);
         GSAdminFinan = (RadioButton) findViewById(R.id.rbAdminFinan);
-        GSASIR2 = (RadioButton) findViewById(R.id.rbASIR2);
+        GSASIR = (RadioButton) findViewById(R.id.rbASIR);
 
         GSPrivado = (RadioButton) findViewById(R.id.rbPrivado);
         GSPublico = (RadioButton) findViewById(R.id.rbPublico);
-
-
-
-
 
         Layout_Bach = (LinearLayout) findViewById(R.id.LBach);
         Layout_Medio = (LinearLayout) findViewById(R.id.LMedio);
@@ -75,9 +71,6 @@ public class Matricula extends AppCompatActivity {
 
     }
 
-    public void inicio(View view) {
-        finish();
-    }
 
 
     public void funcionbach(View view) {
@@ -148,6 +141,18 @@ public class Matricula extends AppCompatActivity {
 
         if (Bach_Salud.isChecked()) {
             Bach_Sociales.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_GestAdmin.setChecked(false);
+            GSPrivado.setChecked(false);
+            GSPublico.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
+            GSMarketing.setChecked(false);
+
+
         }
 
     }
@@ -156,6 +161,16 @@ public class Matricula extends AppCompatActivity {
 
         if (Bach_Sociales.isChecked()) {
             Bach_Salud.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_GestAdmin.setChecked(false);
+            GSPrivado.setChecked(false);
+            GSPublico.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
+            GSMarketing.setChecked(false);
         }
 
     }
@@ -163,8 +178,17 @@ public class Matricula extends AppCompatActivity {
     public void funciongestadmini(View view) {
 
         if (GMedio_GestAdmin.isChecked()) {
-            GMedio_ASIR.setChecked(false);
+            GMedio_SMR.setChecked(false);
             GMedio_ActComer.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSPrivado.setChecked(false);
+            GSPublico.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
+            GSMarketing.setChecked(false);
         }
 
     }
@@ -173,17 +197,35 @@ public class Matricula extends AppCompatActivity {
 
 
         if (GMedio_ActComer.isChecked()) {
-            GMedio_ASIR.setChecked(false);
+            GMedio_SMR.setChecked(false);
             GMedio_GestAdmin.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSPrivado.setChecked(false);
+            GSPublico.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
+            GSMarketing.setChecked(false);
         }
 
     }
 
-    public void funcionASIR1(View view) {
+    public void funcionSMR(View view) {
 
-        if (GMedio_ASIR.isChecked()) {
+        if (GMedio_SMR.isChecked()) {
             GMedio_GestAdmin.setChecked(false);
             GMedio_ActComer.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSPrivado.setChecked(false);
+            GSPublico.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
+            GSMarketing.setChecked(false);
         }
 
     }
@@ -191,6 +233,13 @@ public class Matricula extends AppCompatActivity {
     public void seleccionasirdistancia(View view) {
 
         if(GSASIRD.isChecked()){
+            GMedio_GestAdmin.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
             GSDAM.setChecked(false);
             GSMarketing.setChecked(false);
 
@@ -201,8 +250,15 @@ public class Matricula extends AppCompatActivity {
     public void selecciondam(View view) {
 
         if(GSDAM.isChecked()){
-            GSMarketing.setChecked(false);
+            GMedio_GestAdmin.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
             GSASIRD.setChecked(false);
+            GSMarketing.setChecked(false);
 
         }
     }
@@ -210,8 +266,15 @@ public class Matricula extends AppCompatActivity {
     public void seleccionmarketing(View view) {
 
         if(GSMarketing.isChecked()){
-            GSDAM.setChecked(false);
+            GMedio_GestAdmin.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSAdminFinan.setChecked(false);
+            GSASIR.setChecked(false);
             GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
 
         }
     }
@@ -219,7 +282,15 @@ public class Matricula extends AppCompatActivity {
     public void seleccionfinanzas(View view) {
 
         if(GSAdminFinan.isChecked()){
-            GSASIR2.setChecked(false);
+            GMedio_GestAdmin.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSMarketing.setChecked(false);
+            GSASIR.setChecked(false);
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
 
         }
 
@@ -227,9 +298,16 @@ public class Matricula extends AppCompatActivity {
 
     public void seleccionasir2(View view) {
 
-        if(GSASIR2.isChecked()){
+        if(GSASIR.isChecked()){
+            GMedio_GestAdmin.setChecked(false);
+            GMedio_ActComer.setChecked(false);
+            GMedio_SMR.setChecked(false);
+            Bach_Salud.setChecked(false);
+            Bach_Sociales.setChecked(false);
+            GSMarketing.setChecked(false);
             GSAdminFinan.setChecked(false);
-
+            GSASIRD.setChecked(false);
+            GSDAM.setChecked(false);
         }
     }
 }
