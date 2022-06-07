@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalLopeDeVega">
         <activity
+            android:name=".Datos_alumnos"
+            android:exported="false" />
+        <activity
             android:name=".Registro_alumnos"
             android:exported="false" />
         <activity

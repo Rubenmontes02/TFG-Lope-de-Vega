@@ -313,7 +313,7 @@ public class Matricula extends AppCompatActivity {
     }
 
     public void registro(View view) {
-        Intent intent = new Intent(Matricula.this, Registro_alumnos.class);
+        Intent intent = new Intent(Matricula.this, Datos_alumnos.class);
         startActivity(intent);
     }
 }
