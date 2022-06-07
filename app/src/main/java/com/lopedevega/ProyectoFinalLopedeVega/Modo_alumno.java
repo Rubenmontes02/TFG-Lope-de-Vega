@@ -6,27 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Modo_alumno extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_modo_alumno);
     }
 
     public void funcion_contacto(View view) {
-        Intent intent = new Intent(MainActivity.this, Contacto.class);
+        Intent intent = new Intent(Modo_alumno.this, Contacto.class);
         startActivity(intent);
 
     }
 
     public void funcion_ubicacion(View view) {
-        Intent intent = new Intent(MainActivity.this, ubication.class);
+        Intent intent = new Intent(Modo_alumno.this, ubication.class);
         startActivity(intent);
     }
 
     public void funcion_matricula(View view) {
-        Intent intent = new Intent(MainActivity.this, Matricula.class);
+        Intent intent = new Intent(Modo_alumno.this, Matricula.class);
         startActivity(intent);
     }
 }
