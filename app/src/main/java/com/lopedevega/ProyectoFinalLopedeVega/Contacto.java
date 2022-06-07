@@ -32,4 +32,24 @@ public class Contacto extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+
+    public void sendEmail(View view) {
+
+        String[] TO = {"montesgonzalezruben2@gmail.com"};
+        String[] CC = {""};
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+        emailIntent.putExtra(Intent.EXTRA_CC, CC);
+
+        try {
+            startActivity(Intent.createChooser(emailIntent, "Enviar email..."));
+            finish();
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(Contacto.this,
+                    "No tienes clientes de email instalados.", Toast.LENGTH_SHORT).show();
+        }
+    }
 }
