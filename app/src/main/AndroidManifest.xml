@@ -27,9 +27,6 @@
             android:name=".Registro_alumnos"
             android:exported="false" />
         <activity
-            android:name=".Alumnos_registrados"
-            android:exported="false" />
-        <activity
             android:name=".Modo_profesor"
             android:exported="false" />
         <!--
