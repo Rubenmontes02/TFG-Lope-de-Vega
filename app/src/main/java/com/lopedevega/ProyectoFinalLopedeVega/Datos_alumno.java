@@ -17,7 +17,6 @@ public class Datos_alumno extends AppCompatActivity {
     EditText id;
     EditText nombre;
     EditText clave;
-    Button insertar;
 
     funcionalidadbd funcionalidadbd = new funcionalidadbd(this);
 

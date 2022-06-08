@@ -33,21 +33,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="64dp"
-        android:enabled="true"
+        android:id="@+id/entrar"
+        android:layout_width="121dp"
+        android:layout_height="52dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="402dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
+        android:onClick="entrar"
         android:text="Entrar"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="16sp"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.077"
-        android:onClick="entrar"/>
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/password"

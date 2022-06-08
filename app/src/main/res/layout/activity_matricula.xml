@@ -269,21 +269,29 @@
 
     </LinearLayout>
 
-
     <Button
         android:id="@+id/btmatricularse"
-        android:layout_width="113dp"
-        android:layout_height="37dp"
-        android:background="#2F3C85"
+        android:layout_width="122dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
         android:onClick="registro"
-        android:text="Matricularse"
-        android:textColor="#FFFCFC"
+        android:text="Ir a matrícula"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="10sp"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintVertical_bias="0.942"
+        tools:ignore="MissingConstraints" />
+
+
 
     <TextView
         android:id="@+id/textView9"

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="334dp"
         android:layout_marginBottom="680dp"
         android:text="Alumnos registrados:"
@@ -22,6 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
+
 
     <EditText
         android:id="@+id/etCodigo"
@@ -34,49 +35,68 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="funcionConsultar"
-        android:text="Consultar"
-        app:layout_constraintBottom_toTopOf="@+id/etCodigo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.166" />
 
     <TextView
         android:id="@+id/tvNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
         android:layout_marginEnd="113dp"
         android:layout_marginBottom="19dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/etCodigo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="606dp"
+        android:id="@+id/eliminar"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
+        android:onClick="funcionEliminar"
         android:text="Eliminar"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="16sp"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="funcionEliminar"/>
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toEndOf="@+id/consultar"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/consultar"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
+        android:onClick="funcionConsultar"
+        android:text="Consultar"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="16sp"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

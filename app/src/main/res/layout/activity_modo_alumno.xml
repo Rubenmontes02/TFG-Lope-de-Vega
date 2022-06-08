@@ -8,49 +8,68 @@
     android:orientation="vertical"
     tools:context=".Modo_alumno">
 
+
     <Button
         android:id="@+id/button18"
-        android:layout_width="109dp"
-        android:layout_height="43dp"
-        android:background="#2F3C85"
+        android:layout_width="122dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
         android:onClick="funcion_ubicacion"
         android:text="Ubicación"
-        android:textColor="#FBFBFB"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="10sp"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/button17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintStart_toEndOf="@+id/button17"
+        app:layout_constraintTop_toTopOf="@+id/button17"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button17"
-        android:layout_width="109dp"
-        android:layout_height="43dp"
-        android:background="#2F3C85"
+        android:layout_width="122dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
         android:onClick="funcion_contacto"
         android:text="Contacto"
-        android:textColor="#FBFBFB"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="10sp"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="109dp"
-        android:layout_height="43dp"
-        android:background="#2F3C85"
+        android:layout_width="122dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/button_oval"
+        android:fontFamily="@font/montserrat"
         android:onClick="funcion_matricula"
-        android:text="Matricula"
-        android:textColor="#FBFBFB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        android:text="Matrícula"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="10sp"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/button17"
+        app:layout_constraintEnd_toStartOf="@+id/button17"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintTop_toTopOf="@+id/button17"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -67,11 +86,11 @@
         tools:src="@drawable/ic_launcher_foreground" />
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="409dp"
         android:layout_height="463dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button17">
 
