@@ -10,7 +10,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NOMBRE = "alumnos.db";
-    public static final String TABLE_ALUMNOS = "t_alumnos";
+    private static final String TABLE_CONTACTOS = "t_contactos";
 
 
 
@@ -23,7 +23,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
 
-        sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_ALUMNOS + "(" +
+        sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_CONTACTOS + "(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "nombre TEXT NOT NULL," +
                 "telefono TEXT NOT NULL," +
@@ -33,7 +33,7 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
-        sqLiteDatabase.execSQL("DROP TABLE " + TABLE_ALUMNOS);
+        sqLiteDatabase.execSQL("DROP TABLE " + TABLE_CONTACTOS);
         onCreate(sqLiteDatabase);
 
     }
