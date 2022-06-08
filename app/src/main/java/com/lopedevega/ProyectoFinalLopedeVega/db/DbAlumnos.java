@@ -2,14 +2,9 @@ package com.lopedevega.ProyectoFinalLopedeVega.db;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
-
-import com.lopedevega.ProyectoFinalLopedeVega.entities.Alumnos;
-
-import java.util.ArrayList;
 
 public class DbAlumnos extends DbHelper{
 
@@ -44,35 +39,4 @@ public class DbAlumnos extends DbHelper{
 
         return id;
     }
-
-    public ArrayList<Alumnos> leerAlumnos(){
-
-
-        DbHelper dbHelper = new DbHelper(context);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        ArrayList<Alumnos> listaAlumnos = new ArrayList<>();
-        Alumnos alumno = null;
-        Cursor cursorAlumnos = null;
-
-        cursorAlumnos = db.rawQuery("SELECT * FROM " + TABLE_ALUMNOS, null);
-
-        if(cursorAlumnos.moveToFirst()){
-            do{
-                alumno = new Alumnos();
-                alumno.setId(cursorAlumnos.getInt(0));
-                alumno.setNombre(cursorAlumnos.getString(1));
-                alumno.setTelefono(cursorAlumnos.getString(2));
-                alumno.setCorreo_electronico(cursorAlumnos.getString(3));
-                listaAlumnos.add(alumno);
-
-            }while (cursorAlumnos.moveToNext());
-        }
-
-        cursorAlumnos.close();
-
-        return listaAlumnos;
-
-    }
-
 }

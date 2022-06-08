@@ -35,10 +35,11 @@ public class Datos_alumnos extends AppCompatActivity {
 
                 if(id < 0){
                     Toast.makeText(Datos_alumnos.this, "ALUMNO REGISTRADO CON EXITO", Toast.LENGTH_SHORT).show();
+                    limpiar();
                     Intent intent = new Intent(Datos_alumnos.this, Modo_alumno.class);
                     startActivity(intent);
                 }else{
-                    Toast.makeText(Datos_alumnos.this, "ERROR AL GUARDAR REGISTRO", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Datos_alumnos.this, "ERROR AL GUARDAR REGISTRO   ", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -48,4 +49,9 @@ public class Datos_alumnos extends AppCompatActivity {
     }
 
 
+    private void limpiar(){
+        nombre.setText("");
+        telefono.setText("");
+        correo.setText("");
+    }
 }

@@ -36,7 +36,7 @@ public class Modo_profesor extends AppCompatActivity {
 
         if(user != "user"){
             Toast.makeText(this, "Entrando...", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Modo_profesor.this, Registro_alumnos.class);
+                Intent intent = new Intent(Modo_profesor.this, Alumnos_registrados.class);
                 startActivity(intent);
 
         }else{
