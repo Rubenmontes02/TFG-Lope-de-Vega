@@ -275,7 +275,7 @@
         android:layout_width="113dp"
         android:layout_height="37dp"
         android:background="#2F3C85"
-        android:onClick="registro"
+        android:onClick="inicio"
         android:text="Matricularse"
         android:textColor="#FFFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
