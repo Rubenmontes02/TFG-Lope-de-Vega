@@ -13,7 +13,7 @@ public class Modo_profesor extends AppCompatActivity {
     
     EditText user, password;
     
-    String usuario, contraseña, Vusuario, Vcontraseña;
+    String usuario, contraseña;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
