@@ -48,7 +48,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/datos_alumno"
+                    android:id="@+id/DATOS_ALUMNOS"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -199,119 +199,135 @@
                         android:inputType="textPersonName" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/DATOS_TUTORES2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/DATOS_TUTORES2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical">-->
 
-                    <TextView
-                        android:id="@+id/textView22"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Datos de los tutores:"
-                        android:textColor="@color/blue"
-                        android:textStyle="bold" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView22"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Datos de los tutores:"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textStyle="bold" />-->
 
-                    <EditText
-                        android:id="@+id/etNombrePadre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Nombre Tutor 1"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etNombrePadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Nombre Tutor 1"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <EditText
-                        android:id="@+id/etApellidosPadre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Apellidos Tutor 1"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etApellidosPadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Apellidos Tutor 1"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <EditText
-                        android:id="@+id/etCorreoPadre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Correo Tutor 1"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etCorreoPadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Correo Tutor 1"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <EditText
-                        android:id="@+id/etNombreMadre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Nombre Tutor 2"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etDniPadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="DNI Tutor 1"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <EditText
-                        android:id="@+id/etApellidosMadre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Apellidos Tutor 2"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etNombreMadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Nombre Tutor 2"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <EditText
-                        android:id="@+id/etCorreoMadre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Correo Tutor 2"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etApellidosMadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Apellidos Tutor 2"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                </LinearLayout>
+<!--                    <EditText-->
+<!--                        android:id="@+id/etCorreoMadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Correo Tutor 2"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                <LinearLayout
-                    android:id="@+id/DATOS_TUTORES"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+<!--                    <EditText-->
+<!--                        android:id="@+id/etDniMadre"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="DNI Tutor 2"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <TextView
-                        android:id="@+id/textView24"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Estudios realizados"
-                        android:textColor="@color/blue"
-                        android:textStyle="bold" />
+<!--                </LinearLayout>-->
 
-                    <EditText
-                        android:id="@+id/etEstudiosRealizados"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Estudios realizados"
-                        android:inputType="textPersonName" />
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/DATOS_ESTUDIOS"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical">-->
 
-                    <EditText
-                        android:id="@+id/etCursoA"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Curso"
-                        android:inputType="textPersonName" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView24"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Estudios realizados"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textStyle="bold" />-->
 
-                    <EditText
-                        android:id="@+id/etCentroA"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Centro"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etEstudiosRealizados"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Estudios realizados"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                    <EditText
-                        android:id="@+id/etLocalidadEA"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Localidad"
-                        android:inputType="textPersonName" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/etCursoA"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Curso"-->
+<!--                        android:inputType="textPersonName" />-->
 
-                </LinearLayout>
+<!--                    <EditText-->
+<!--                        android:id="@+id/etCentroA"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Centro"-->
+<!--                        android:inputType="textPersonName" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/etLocalidadEA"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Localidad"-->
+<!--                        android:inputType="textPersonName" />-->
+
+<!--                </LinearLayout>-->
 
             </LinearLayout>
         </ScrollView>

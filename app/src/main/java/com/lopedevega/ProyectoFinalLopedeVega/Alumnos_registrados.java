@@ -16,9 +16,7 @@ import android.widget.Toast;
 public class Alumnos_registrados extends AppCompatActivity{
 
     TextView numero, dni, nombre, apellidos, nacionalidad, nacimiento, profesion,
-            domicilio, localidad, provincia, pais, codigo_postal, telefono, correo,
-            sexo, nombrePadre, apellidosPadre, correoPAdre, nombreMadre, apellidosMadre,
-            correoMadre, ultimos_estudios, cursoea, centroea, localidadea;
+            domicilio, localidad, provincia, pais, codigo_postal, telefono, correo, sexo;
     EditText etCodigo;
     funcionalidadbd funcionalidadbd = new funcionalidadbd(this);
     ScrollView scrollView;
@@ -44,16 +42,6 @@ public class Alumnos_registrados extends AppCompatActivity{
         codigo_postal = (TextView) findViewById(R.id.tvCodigo_postal);
         telefono = (TextView) findViewById(R.id.tvTelefono);
         correo = (TextView) findViewById(R.id.tvCorreo);
-        nombrePadre = (TextView) findViewById(R.id.tvNombrePadre);
-        apellidosPadre = (TextView) findViewById(R.id.tvApellidosPadre);
-        correoPAdre = (TextView) findViewById(R.id.tvCorreoPadre);
-        nombreMadre = (TextView) findViewById(R.id.tvNombreMadre);
-        apellidosMadre = (TextView) findViewById(R.id.tvApellidoMadre);
-        correoMadre = (TextView) findViewById(R.id.tvCorreoMadre);
-        ultimos_estudios = (TextView) findViewById(R.id.tvUltimosEstudios);
-        cursoea = (TextView) findViewById(R.id.tvCursoAE);
-        centroea = (TextView) findViewById(R.id.tvCentroAE);
-        localidadea = (TextView) findViewById(R.id.tvLocalodadEA);
 
 
         funcionContar();
@@ -76,8 +64,7 @@ public class Alumnos_registrados extends AppCompatActivity{
 
         Cursor numerofila = db.rawQuery(
                 "select dni, nombre, apellidos, sexo, nacionalidad, nacimiento, profesion, domicilio, localidad, provincia, pais, codigo_postal," +
-                        " telefono, correo, nombrePadre, apellidosPadre, correoPadre, nombreMadre, apellidosMadre," +
-                        " correoMadre, ultimos_estudios, cursoea, centroea, localidadea from alumnos where dni="+codigo, null);
+                        " telefono, correo from alumnos where dni="+codigo, null);
 
 
         if(numerofila.moveToFirst()){
@@ -97,16 +84,6 @@ public class Alumnos_registrados extends AppCompatActivity{
             codigo_postal.setText(numerofila.getString(11));
             telefono.setText(numerofila.getString(12));
             correo.setText(numerofila.getString(13));
-            nombrePadre.setText(numerofila.getString(14));
-            apellidosPadre.setText(numerofila.getString(15));
-            correoPAdre.setText(numerofila.getString(16));
-            nombreMadre.setText(numerofila.getString(17));
-            apellidosMadre.setText(numerofila.getString(18));
-            correoMadre.setText(numerofila.getString(19));
-            ultimos_estudios.setText(numerofila.getString(20));
-            cursoea.setText(numerofila.getString(21));
-            centroea.setText(numerofila.getString(22));
-            localidadea.setText(numerofila.getString(23));
 
 
 
