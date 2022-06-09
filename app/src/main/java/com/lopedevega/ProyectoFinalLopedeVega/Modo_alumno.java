@@ -26,7 +26,7 @@ public class Modo_alumno extends AppCompatActivity {
     }
 
     public void funcion_matricula(View view) {
-        Intent intent = new Intent(Modo_alumno.this, Matricula.class);
+        Intent intent = new Intent(Modo_alumno.this, Datos_alumno.class);
         startActivity(intent);
     }
 }
