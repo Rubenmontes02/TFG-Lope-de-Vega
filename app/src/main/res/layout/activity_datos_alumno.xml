@@ -10,7 +10,8 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
         android:text="Introduce los datos de la matricula"
         android:textColor="@color/blue"
         android:textSize="20sp"
@@ -23,10 +24,11 @@
         app:layout_constraintVertical_bias="0.005" />
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="75dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/insertar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,7 +149,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:hint="Docimicilio"
+                        android:hint="Domicilio"
                         android:inputType="textPersonName" />
 
                     <EditText
@@ -335,21 +337,36 @@
 
     <Button
         android:id="@+id/insertar"
-        android:layout_width="137dp"
-        android:layout_height="32dp"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
         android:layout_margin="20dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/button_oval"
         android:fontFamily="@font/montserrat"
         android:onClick="funcionInsertar"
         android:text="Registrar Datos"
         android:textColor="@color/white"
         android:textColorHighlight="@color/design_default_color_secondary_variant"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_logout_black_24dp"
+        android:onClick="funcionInicio"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.lopedevega.ProyectoFinalLopedeVega;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -61,6 +62,12 @@ public class Datos_alumno extends AppCompatActivity {
         localidadea = (EditText) findViewById(R.id.etLocalidadEA);
            }
 
+
+    public void funcionInicio(View view) {
+
+        Intent intent = new Intent(Datos_alumno.this, Inicio.class);
+        startActivity(intent);
+    }
 
     public void funcionInsertar(View view) {
 

@@ -2,6 +2,7 @@ package com.lopedevega.ProyectoFinalLopedeVega;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
@@ -137,7 +138,7 @@ public class Alumnos_registrados extends AppCompatActivity{
         
         int elementosEliminados = 0;
         
-        elementosEliminados = db.delete("alumnos", "dni="+codigo, null);
+        elementosEliminados = db.delete("alumnos", "telefono="+codigo, null);
         
         db.close();
         
@@ -156,5 +157,11 @@ public class Alumnos_registrados extends AppCompatActivity{
     public void nuevoCodigo(View view) {
 
         scrollView.setVisibility(View.GONE);
+    }
+
+    public void funcionInicio(View view) {
+
+        Intent intent = new Intent(Alumnos_registrados.this, Inicio.class);
+        startActivity(intent);
     }
 }

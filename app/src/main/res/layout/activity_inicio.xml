@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/profesor"
         android:layout_width="122dp"
-        android:layout_height="42dp"
+        android:layout_height="46dp"
         android:layout_margin="20dp"
         android:layout_marginStart="12dp"
         android:background="@drawable/button_oval"
@@ -18,7 +18,7 @@
         android:text="Soy Profesor"
         android:textColor="@color/white"
         android:textColorHighlight="@color/design_default_color_secondary_variant"
-        android:textSize="10sp"
+        android:textSize="15sp"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="@+id/alumno"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +28,8 @@
 
     <Button
         android:id="@+id/alumno"
-        android:layout_width="122dp"
-        android:layout_height="42dp"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
         android:layout_margin="20dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/button_oval"
@@ -38,7 +38,7 @@
         android:text="Soy Alumno"
         android:textColor="@color/white"
         android:textColorHighlight="@color/design_default_color_secondary_variant"
-        android:textSize="10sp"
+        android:textSize="15sp"
         app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
