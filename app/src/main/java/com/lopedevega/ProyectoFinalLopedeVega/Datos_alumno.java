@@ -17,7 +17,10 @@ import android.widget.Toast;
 public class Datos_alumno extends AppCompatActivity {
 
     EditText dni, nombre, apellidos, nacionalidad, nacimiento, profesion,
-            domicilio, localidad, provincia, pais, codigo_postal, telefono, correo;
+            domicilio, localidad, provincia, pais, codigo_postal, telefono, correo,
+            nombrePadre, apellidosPadre, correoPAdre, dniPadre, nombreMadre, apellidosMadre,
+            correoMadre, dniMadre, ultimos_estudios, cursoea, centroea, localidadea;
+
     RadioButton hombre, mujer;
 
     String sexo;
@@ -44,7 +47,18 @@ public class Datos_alumno extends AppCompatActivity {
         correo = (EditText) findViewById(R.id.etCorreo);
         hombre = (RadioButton) findViewById(R.id.rbHombre);
         mujer = (RadioButton) findViewById(R.id.rbMujer);
-
+        nombrePadre = (EditText) findViewById(R.id.etNombrePadre);
+        apellidosPadre = (EditText) findViewById(R.id.etApellidosPadre);
+        correoPAdre = (EditText) findViewById(R.id.etCorreoPadre);
+        dniPadre = (EditText) findViewById(R.id.etDniPadre);
+        nombreMadre = (EditText) findViewById(R.id.etNombreMadre);
+        apellidosMadre = (EditText) findViewById(R.id.etApellidosMadre);
+        correoMadre = (EditText) findViewById(R.id.etCorreoMadre);
+        dniMadre = (EditText) findViewById(R.id.etDniMadre);
+        ultimos_estudios = (EditText) findViewById(R.id.etEstudiosRealizados);
+        cursoea = (EditText) findViewById(R.id.etCursoA);
+        centroea = (EditText) findViewById(R.id.etCentroA);
+        localidadea = (EditText) findViewById(R.id.etLocalidadEA);
            }
 
 
@@ -77,11 +91,18 @@ public class Datos_alumno extends AppCompatActivity {
         values.put(DbInfo.CAMPO_CODIGO_POSTAL, codigo_postal.getText().toString());
         values.put(DbInfo.CAMPO_TELEFONO, telefono.getText().toString());
         values.put(DbInfo.CAMPO_CORREO, correo.getText().toString());
-
-
-
-
-
+        values.put(DbInfo.CAMPO_NOMBRE_PADRE, nombrePadre.getText().toString());
+        values.put(DbInfo.CAMPO_APELLIDOS_PADRE, apellidosPadre.getText().toString());
+        values.put(DbInfo.CAMPO_CORREO_PADRE, correoPAdre.getText().toString());
+        values.put(DbInfo.CAMPO_DNI_PADRE, dniPadre.getText().toString());
+        values.put(DbInfo.CAMPO_NOMBRE_MADRE, nombreMadre.getText().toString());
+        values.put(DbInfo.CAMPO_APELLIDOS_MADRE, apellidosMadre.getText().toString());
+        values.put(DbInfo.CAMPO_CORREO_MADRE, correoMadre.getText().toString());
+        values.put(DbInfo.CAMPO_DNI_MADRE, dniMadre.getText().toString());
+        values.put(DbInfo.CAMPO_ULTIMOS_ESTUDIOS, ultimos_estudios.getText().toString());
+        values.put(DbInfo.CAMPO_CURSOA, cursoea.getText().toString());
+        values.put(DbInfo.CAMPO_CURSOA, centroea.getText().toString());
+        values.put(DbInfo.CAMPO_LOCALIDADEA, localidadea.getText().toString());
 
         long newRowId = db.insert(DbInfo.NOMBRE_TABLA, null, values);
         Toast.makeText(this, "Insertando:"+newRowId, Toast.LENGTH_SHORT).show();
@@ -103,20 +124,18 @@ public class Datos_alumno extends AppCompatActivity {
         correo.setText("");
         hombre.setChecked(false);
         mujer.setChecked(false);
-//
-//        nombrePadre.setText("");
-//        apellidosPadre.setText("");
-//        correoPAdre.setText("");
-//        dni_padre.setText("");
-//        nombreMadre.setText("");
-//        apellidosMadre.setText("");
-//        correoMadre.setText("");
-//        dni_madre.setText("");
-//
-//        ultimos_estudios.setText("");
-//        cursoea.setText("");
-//        centroea.setText("");
-//        localidadea.setText("");
+        nombrePadre.setText("");
+        apellidosPadre.setText("");
+        correoPAdre.setText("");
+        dniPadre.setText("");
+        nombreMadre.setText("");
+        apellidosMadre.setText("");
+        correoMadre.setText("");
+        dniMadre.setText("");
+        ultimos_estudios.setText("");
+        cursoea.setText("");
+        centroea.setText("");
+        localidadea.setText("");
 
 
 

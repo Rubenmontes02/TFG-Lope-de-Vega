@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="334dp"
         android:layout_marginBottom="680dp"
         android:text="Alumnos registrados:"
@@ -26,28 +26,46 @@
         app:layout_constraintVertical_bias="0.25" />
 
 
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="189dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Introduce el teléfono del alumno:"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etCodigo"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/etCodigo"
+        app:layout_constraintVertical_bias="0.652" />
+
     <EditText
         android:id="@+id/etCodigo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="185dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="542dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.152"
+        android:onClick="nuevoCodigo"/>
 
     <TextView
         android:id="@+id/tvNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="113dp"
         android:layout_marginBottom="19dp"
         android:textSize="20sp"
@@ -104,7 +122,10 @@
         android:id="@+id/datos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="225dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
         android:saveEnabled="false"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -323,201 +344,195 @@
                 android:layout_height="wrap_content"
                 android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/DATOS_ESTUDIOS"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:gravity="center"-->
-<!--                android:text="Datos de los tutores"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp"-->
-<!--                android:textStyle="bold" />-->
+            <TextView
+                android:id="@+id/DATOS_ESTUDIOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Datos de los tutores"
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView20"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Nombre Tutor 1:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Tutor 1:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvNombrePadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvNombrePadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView26"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Apellidos Tutor 1:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos Tutor 1:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvApellidosPadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvApellidosPadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView28"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Correo Tutor 1:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo Tutor 1:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvCorreoPadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvCorreoPadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView43"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="DNI Tutor 1:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DNI Tutor 1:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvDniPadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvDniPadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView30"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Nombre Tutor 2:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Tutor 2:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvNombreMadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvNombreMadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView32"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Apellidos Tutor 2:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellidos Tutor 2:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvApellidoMadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvApellidoMadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView34"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Correo Tutor 2:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo Tutor 2:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvCorreoMadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvCorreoMadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView35"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Correo Tutor 2:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DNI Tutor 2:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView45"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="DNI Tutor 2:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvDniMadre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvDniMadre"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/DATOS_ULTIMOS_ESTUDIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Datos del Alumno: "
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/DATOS_ULTIMOS_ESTUDIO"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:gravity="center"-->
-<!--                android:text="Datos del Alumno: "-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp"-->
-<!--                android:textStyle="bold" />-->
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ultimos estudios:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView39"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Ultimos estudios:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvUltimosEstudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvUltimosEstudios"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curso:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView40"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Curso:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvCursoEA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvCursoAE"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Centro:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView41"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Centro:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvCentroEA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/tvCentroAE"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localidad:"
+                android:textColor="@color/blue"
+                android:textSize="16dp" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView42"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Localidad:"-->
-<!--                android:textColor="@color/blue"-->
-<!--                android:textSize="16dp" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/tvLocalodadEA"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:textSize="16dp" />-->
+            <TextView
+                android:id="@+id/tvLocalodadEA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
 
         </LinearLayout>
     </ScrollView>
