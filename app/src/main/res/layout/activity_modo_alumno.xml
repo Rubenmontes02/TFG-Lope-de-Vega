@@ -34,7 +34,7 @@
         android:layout_width="122dp"
         android:layout_height="42dp"
         android:layout_margin="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="384dp"
         android:background="@drawable/button_oval"
         android:fontFamily="@font/montserrat"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.045"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -82,18 +82,20 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048"
+        app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@mipmap/ic_launcher_round"
         tools:src="@drawable/ic_launcher_foreground" />
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="409dp"
-        android:layout_height="463dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="406dp"
+        android:layout_height="571dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button17">
+        app:layout_constraintTop_toBottomOf="@+id/button17"
+        app:layout_constraintVertical_bias="0.111">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,6 +116,7 @@
                 android:layout_width="350dp"
                 android:layout_height="140dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="15sp"
                 android:gravity="center"
                 android:text="La Escuela nació en los años 70, como Escuela de Formación Profesional, en respuesta a la necesidad de formar a personas para que pudieran incorporarse al mundo laboral. Siempre tuvimos enseñanzas de Formación Profesional y en la nueva andadura incorporamos el bachillerato de Humanidades y Ciencias Sociales y de Ciencias."
                 android:textSize="17sp" />
@@ -123,6 +126,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15sp"
                 android:gravity="center"
                 android:text="En la actualidad impartimos los Ciclos de Grado Superior de Técnico Superior en Administración y finanzas y Técnico Superior en Administración de sistemas informáticos en red. Tenemos en nuestra oferta educativa Grados Superiores Privados como el de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, Técnico Superior en Marketing y Publicidad y Técnico Superior en Administración de sistemas informáticos en red en su modalidad a distancia."
                 android:textSize="17sp" />
