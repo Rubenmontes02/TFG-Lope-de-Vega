@@ -32,6 +32,13 @@ public class DbInfo {
     public static final String CAMPO_CURSOA = "cursoEA";
     public static final String CAMPO_CENTROA = "centroEA";
     public static final String CAMPO_LOCALIDADEA = "localidadEA";
+    public static final String CAMPO_CENTROEN = "centroEN";
+    public static final String CAMPO_LOCALIDADEN = "localidadEN";
+    public static final String CAMPO_NOMBREEN = "nombreEN";
+    public static final String CAMPO_TIPOEN = "tipoEN";
+    public static final String CAMPO_REGIMENEN = "regimenEN";
+    public static final String CAMPO_CURSOEN = "cursoEN";
+
 
 
     private DbInfo(){
@@ -66,7 +73,13 @@ public class DbInfo {
                     DbInfo.CAMPO_ULTIMOS_ESTUDIOS + " TEXT," +
                     DbInfo.CAMPO_CURSOA + " TEXT," +
                     DbInfo.CAMPO_CENTROA + " TEXT," +
-                    DbInfo.CAMPO_LOCALIDADEA + " TEXT)";
+                    DbInfo.CAMPO_LOCALIDADEA + " TEXT," +
+                    DbInfo.CAMPO_CENTROEN + " TEXT," +
+                    DbInfo.CAMPO_LOCALIDADEN + " TEXT," +
+                    DbInfo.CAMPO_NOMBREEN + " TEXT," +
+                    DbInfo.CAMPO_TIPOEN + " TEXT," +
+                    DbInfo.CAMPO_REGIMENEN + " TEXT," +
+                    DbInfo.CAMPO_CURSOEN + " TEXT)";
 
     public static final String SQL_DELETETABLE =
             "DROP TABLE IF EXISTS " + DbInfo.NOMBRE_TABLA;

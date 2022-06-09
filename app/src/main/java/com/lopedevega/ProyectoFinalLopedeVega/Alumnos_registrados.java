@@ -18,7 +18,7 @@ public class Alumnos_registrados extends AppCompatActivity{
     TextView numero, dni, nombre, apellidos, nacionalidad, nacimiento, profesion,
             domicilio, localidad, provincia, pais, codigo_postal, telefono, correo,
             sexo, nombrePadre, apellidosPadre, correoPAdre,dniPadre, nombreMadre, apellidosMadre,
-            correoMadre, dniMadre, ultimos_estudios, cursoea, centroea, localidadea;
+            correoMadre, dniMadre, ultimos_estudios, cursoea, centroea, localidadea, centroEN, localidadEN, nombreEN, tipoEN, regimenEN, cursoEN;
 
     EditText etCodigo;
     funcionalidadbd funcionalidadbd = new funcionalidadbd(this);
@@ -57,6 +57,12 @@ public class Alumnos_registrados extends AppCompatActivity{
         cursoea = (TextView) findViewById(R.id.tvCursoEA);
         centroea = (TextView) findViewById(R.id.tvCentroEA);
         localidadea = (TextView) findViewById(R.id.tvLocalodadEA);
+        centroEN = (TextView) findViewById(R.id.tvCentroEN);
+        localidadEN = (TextView) findViewById(R.id.tvLocalidadEN);
+        nombreEN = (TextView) findViewById(R.id.tvNombreEN);
+        tipoEN = (TextView) findViewById(R.id.tvTipoEN);
+        regimenEN = (TextView) findViewById(R.id.tvRegimen);
+        cursoEN = (TextView) findViewById(R.id.tvCursoEN);
 
         funcionContar();
 
@@ -79,7 +85,7 @@ public class Alumnos_registrados extends AppCompatActivity{
         Cursor numerofila = db.rawQuery(
         "select dni, nombre, apellidos, sexo, nacionalidad, nacimiento, profesion, domicilio, localidad, provincia, pais, codigo_postal," +
                 " telefono, correo, nombre_padre, apellidos_padre, correo_padre, dni_padre, nombre_madre, apellidos_madre, correo_madre, dni_madre," +
-                "ultimos_estudios, cursoEA, centroEA, localidadEA from alumnos where telefono="+codigo, null);
+                "ultimos_estudios, cursoEA, centroEA, localidadEA, centroEN, localidadEN, nombreEn, tipoEN, regimenEN, cursoEN from alumnos where telefono="+codigo, null);
 
         if(numerofila.moveToFirst()){
 
@@ -109,6 +115,12 @@ public class Alumnos_registrados extends AppCompatActivity{
             cursoea.setText(numerofila.getString(23));
             centroea.setText(numerofila.getString(24));
             localidadea.setText(numerofila.getString(25));
+            centroEN.setText(numerofila.getString(26));
+            localidadEN.setText(numerofila.getString(27));
+            nombreEN.setText(numerofila.getString(28));
+            tipoEN.setText(numerofila.getString(29));
+            regimenEN.setText(numerofila.getString(30));
+            cursoEN.setText(numerofila.getString(31));
 
 
             scrollView.setVisibility(View.VISIBLE);
