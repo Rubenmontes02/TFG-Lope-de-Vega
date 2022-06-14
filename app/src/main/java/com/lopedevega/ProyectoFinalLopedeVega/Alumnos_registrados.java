@@ -132,8 +132,8 @@ public class Alumnos_registrados extends AppCompatActivity {
         Canvas canvas = pagina1.getCanvas();
 
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.matricula_imagen);
-        bitmapEscala = Bitmap.createScaledBitmap(bitmap, 150, 80, false);
-        canvas.drawBitmap(bitmapEscala, 200, 20, paint);
+        bitmapEscala = Bitmap.createScaledBitmap(bitmap, 180, 100, false);
+        canvas.drawBitmap(bitmapEscala, 220, 10, paint);
 
 
         descripcion.setTypeface(Typeface.defaultFromStyle(Typeface.NORMAL));
@@ -142,7 +142,7 @@ public class Alumnos_registrados extends AppCompatActivity {
         String[] arrDescripcion = alumnoText.split("\n");
         int y = 115;
         for(int i = 0 ; i < arrDescripcion.length ; i++) {
-            canvas.drawText(arrDescripcion[i], 10, y, descripcion);
+            canvas.drawText(arrDescripcion[i], 20, y, descripcion);
             y += 15;
         }
 
@@ -174,69 +174,69 @@ public class Alumnos_registrados extends AppCompatActivity {
         if(numerofila.moveToFirst()){
 
             alumnoText = "Datos de la Persona Solicitante: \n \n" +
-                            "Nombre del alumno: " + "" +
-                            numerofila.getString(1) + "" + numerofila.getString(2) + "\n" +
-                            "DNI del alumno: " + "" +
+                            "Nombre del alumno: " + " " +
+                            numerofila.getString(1) + " " + numerofila.getString(2) + "\n" +
+                            "DNI del alumno: " + " " +
                             numerofila.getString(0) + "\n" +
-                            "Sexo del alumno: " + "" +
+                            "Sexo del alumno: " + " " +
                             numerofila.getString(3) + "\n" +
-                            "Nacionalidad del alumno: " + "" +
+                            "Nacionalidad del alumno: " + " " +
                             numerofila.getString(4) + "\n" +
-                            "Nacimiento del alumno: " + "" +
+                            "Nacimiento del alumno: " + " " +
                             numerofila.getString(5) + "\n" +
-                            "Profesión del alumno: " + "" +
+                            "Profesión del alumno: " + " " +
                             numerofila.getString(6) + "\n" +
-                            "Domicilio del alumno: " + "" +
+                            "Domicilio del alumno: " + " " +
                             numerofila.getString(7) + "\n" +
-                            "Localidad del alumno: " + "" +
+                            "Localidad del alumno: " + " " +
                             numerofila.getString(8) + "\n" +
-                            "Provincia del alumno: " + "" +
+                            "Provincia del alumno: " + " " +
                             numerofila.getString(9) + "\n" +
-                            "Pais del alumno: " + "" +
+                            "Pais del alumno: " + " " +
                             numerofila.getString(10) + "\n" +
-                            "Código Postal del alumno: " + "" +
+                            "Código Postal del alumno: " + " " +
                             numerofila.getString(11) + "\n" +
-                            "Teléfono del alumno: " + "" +
+                            "Teléfono del alumno: " + " " +
                             numerofila.getString(12) + "\n" +
-                            "Correo del alumno: " + "" +
+                            "Correo del alumno: " + " " +
                             numerofila.getString(13) + "\n \n" +
                             "Datos de los Tutores Legales del Alumno: \n \n" +
                             "Tutor legal 1: \n" +
-                            "Nombre: " + "" +
-                            numerofila.getString(14) + "" + numerofila.getString(15) + "\n" +
-                            "DNI: " + "" +
+                            "Nombre: " + " " +
+                            numerofila.getString(14) + " " + numerofila.getString(15) + "\n" +
+                            "DNI: " + " " +
                             numerofila.getString(16) + "\n" +
-                            "Correo: " + "" +
+                            "Correo: " + " " +
                             numerofila.getString(17) + "\n" +
                             "Tutor legal 2: \n" +
-                            "Nombre: " + "" +
-                            numerofila.getString(18) + "" +numerofila.getString(19) + "\n" +
-                            "DNI: " + "" +
+                            "Nombre: " + " " +
+                            numerofila.getString(18) + " " +numerofila.getString(19) + "\n" +
+                            "DNI: " + " " +
                             numerofila.getString(20) + "\n" +
-                            "Correo: " + "" +
+                            "Correo: " + " " +
                             numerofila.getString(21) + "\n \n" +
                             "Datos Académicos: \n \n" +
-                            "Últimos estudios realizados: " + "" +
+                            "Últimos estudios realizados: " + " " +
                             numerofila.getString(22) + "\n" +
-                            "Curso: " + "" +
+                            "Curso: " + " " +
                             numerofila.getString(23) + "\n" +
-                            "Centro: " + "" +
+                            "Centro: " + " " +
                             numerofila.getString(24) + "\n" +
-                            "Localidad: " + "" +
+                            "Localidad: " + " " +
                             numerofila.getString(25) + "\n \n" +
                             "Datos de la Matricula: \n \n" +
 
-                            "Centro: " + "" +
+                            "Centro: " + " " +
                             numerofila.getString(26) + "\n" +
-                            "Localidad: " + "" +
+                            "Localidad: " + " " +
                             numerofila.getString(27) + "\n" +
-                            "Nombre del curso: " + "" +
+                            "Nombre del curso: " + " " +
                             numerofila.getString(28) + "\n" +
-                            "Tipo de grado: " + "" +
+                            "Tipo de grado: " + " " +
                             numerofila.getString(29) + "\n" +
-                            "Tipo de régimen: " + "" +
+                            "Tipo de régimen: " + " " +
                             numerofila.getString(30) + "\n" +
-                            "Curso en el que se matricula: " + "" +
+                            "Curso en el que se matricula: " + " " +
                             numerofila.getString(31) + "\n\n\n\n\n\n" +
                             "Firma del director:                                                                                                                             Firma del alumno: ";
 
