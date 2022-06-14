@@ -89,12 +89,12 @@ public class Datos_alumno extends AppCompatActivity {
         cursos.add("Bachillerato de Humanidades");
         cursos.add("Bachillerato de Ciencias Sociales");
         cursos.add("Bachillerato Tecnológico");
-        cursos.add("Grado Medio Sistemas Microinformáticos y Redes");
-        cursos.add("Grado Medio Actividades Comerciales");
-        cursos.add("Grado Medio Gestión Administrativa");
-        cursos.add("Grado Superior Marketing y Publicidad");
-        cursos.add("Grado Superior Desarrollo de Aplicaiones Multiplataforma");
-        cursos.add("Grado Superior Administración de Sistemas Informáticos en Red a Distancia");
+        cursos.add("Sistemas Microinformáticos y Redes");
+        cursos.add("Actividades Comerciales");
+        cursos.add("Gestión Administrativa");
+        cursos.add("Marketing y Publicidad");
+        cursos.add("Desarrollo de Aplicaiones Multiplataforma");
+        cursos.add("Administración de Sistemas Informáticos en Red a Distancia");
 
         ArrayAdapter adapter = new ArrayAdapter(Datos_alumno.this, android.R.layout.simple_spinner_dropdown_item, cursos);
 

@@ -36,7 +36,7 @@ public class Contacto extends AppCompatActivity {
 
     public void sendEmail(View view) {
 
-        String[] TO = {"montesgonzalezruben2@gmail.com"};
+        String[] TO = {"info@ceslopedevega.com"};
         String[] CC = {""};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setData(Uri.parse("mailto:"));
